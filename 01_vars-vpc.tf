@@ -8,7 +8,12 @@ variable "azs" {
   default = ["us-east-1a", "us-east-1b"]
 }
 
-variable "subnets-ip" {
+variable "pub-subnets" {
   type    = list(string)
   default = ["141.0.1.0/24", "141.0.2.0/24"]
+}
+
+variable "priv-subnets" {
+  type    = list(string)
+  default = ["141.0.3.0/24", "141.0.4.0/24"]
 }
