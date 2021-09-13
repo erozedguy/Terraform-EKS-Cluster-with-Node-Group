@@ -1,2 +1,5 @@
-# Terraform-EKS-Cluster-with-Node-Group
-Creating an EKS cluster with node group
+# Terraform - Creating an EKS Cluster with Node Group
+
+
+## Architecture
+![EKSclsuter](img/architecture.png)
