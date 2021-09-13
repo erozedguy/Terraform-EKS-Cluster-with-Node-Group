@@ -15,4 +15,9 @@ resource "aws_eks_node_group" "node-ec2" {
   capacity_type = "ON_DEMAND"
   disk_size      = 20
 
+  depends_on = [
+    aws_iam_role_policy_attachment.AmazonEKSWorkerNodePolicy,
+    aws_iam_role_policy_attachment.AmazonEC2ContainerRegistryReadOnly,
+    aws_iam_role_policy_attachment.AmazonEKS_CNI_Policy
+  ]
 }
