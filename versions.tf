@@ -8,6 +8,5 @@ terraform {
   }
 }
 provider "aws" {
-  profile = "aws"
   region  = "us-east-1"
 }
